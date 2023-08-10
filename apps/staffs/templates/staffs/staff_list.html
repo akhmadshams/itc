@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Ishchilar{% endblock title %}
+
+{% block breadcrumb %}
+<a class="btn btn-primary" href="{% url 'staff-create' %}"><i
+    class="fas fa-plus"></i> Ishchi qo'shish</a>
+{% endblock breadcrumb %}
+
+{% block content %}
+  <table id="stafftable" class="table table-bordered table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th>T/r</th>
+        <th>F.I.SH</th>
+        <th>Jinsi</th>
+        <th>Tel raqami</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for staff in object_list %}
+        <tr class='clickable-row' data-href="{% url 'staff-detail' staff.id %}">
+          <td>{{ forloop.counter}}</td>
+          <td>{{ staff.surname}} {{staff.firstname }} {{staff.other_name }}</td>
+          <td>{{ staff.get_gender_display}}</td>
+          <td>{{ staff.mobile_number}}</td>
+          <td>{{ staff.get_current_status_display}}</td>
+        </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+{% endblock content %}
+
+
+{% block morejs %}
+<script>
+   $('#stafftable').DataTable({
+    select: false
+    });
+</script>
+
+{% endblock morejs %}

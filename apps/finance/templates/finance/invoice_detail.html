@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block content-header %}
+<div class="card-header">
+  <div class="card-tools">
+    <a href="#" class="btn btn-tool">Chop etish</a>
+    <a href="{% url 'invoice-update' object.id %}" class="btn btn-tool">
+      <i class="fas fa-edit"></i>
+    </a>
+    <a href="{% url 'invoice-delete' object.id %}" class="btn btn-tool">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+</div>
+{% endblock content-header %}
+
+
+
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-4">
+    <h3>{{ object }} </h3>
+    <h5>{{ object.session }} </h5>
+    <h5>{{ object.term }} </h5>
+    <h5>{{ object.class_for }} </h5>
+    <h6>Status:{{ object.get_status_display }}</h6>
+    <hr>
+    <div>
+      <h4>To'lanishi kerak: {{ object.balance | intcomma }}</h4>
+    </div>
+  </div>
+  <div class="col-sm-8">
+    <table class="table table-sm table-bordered">
+      Hisob-Faktura</br>
+      <thead class="thead-light">
+        <tr>
+          <th>T/r</th>
+          <th>Tavsif</th>
+          <th>Umumiy</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in items %}
+        <tr>
+          <td>{{ forloop.counter }} </td>
+          <td>{{ item.description }} </td>
+          <td>{{ item.amount }} ~ <a class="btn btn-outline-info btn-sm"
+                href="{% url 'invoice-update' object.id %}">Chegirma</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>To'lanishi kerak</td>
+          <td>{{ object.balance | intcomma}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Kurs umimiy summasi</td>
+          <td>{{ object.balance_from_previous_term | intcomma }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>To'lanadigan umumiy summa</td>
+          <td>{{ object.total_amount_payable | intcomma}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Shu kungacha to'langan</td>
+          <td>{{ object.total_amount_paid | intcomma}}</td>
+        </tr>
+
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<hr>
+
+<h5>To'lov tarixi</h5>
+<table class="table table-bordered table-sm">
+  <thead class="thead-light">
+    <tr>
+      <th>T/r</th>
+      <th>To'langan summa</th>
+      <th>Sanasi</th>
+      <th>To'lov izohi</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for receipt in receipts %}
+    <tr>
+      <td>{{ forloop.counter }}</td>
+      <td>{{ receipt.amount_paid}}</td>
+      <td>{{ receipt.date_paid}}</td>
+      <td>{{ receipt.comment}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+{% endblock content %}

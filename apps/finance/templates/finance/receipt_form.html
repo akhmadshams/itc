@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-8">
+    <form action="" method="POST">
+      {% csrf_token %}
+
+      {% include 'corecode/form_snippet.html' %}
+
+      <input type="submit" class="btn btn-primary" value="To'lash">
+
+    </form>
+  </div>
+
+  <div class="col-4">
+    <div class="alert alert-info" role="alert">
+      <h3>To'lov</h3>
+      <p>{{invoice | upper}}</p>
+      <hr>
+      <ul>
+
+        <li>O'quv yili: {{ invoice.session }}</li>
+        <li>Guruh: {{ invoice.term }}</li>
+        <li>Yo'nalish: {{ invoice.class_for }}</li>
+        <li>Umumiy summa: {{invoice.total_amount_payable | intcomma }}
+        </li>
+        <li>To'langan: {{ invoice.total_amount_paid | intcomma }}</li>
+        <li><strong>Qolgan to'lov: {{invoice.balance | intcomma }}</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock content %}

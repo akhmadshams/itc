@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+  CSV fayl orqali o'quvchilar ro'yxati shakllantiring
+{% endblock title %}
+
+
+{% block content %}
+
+  <div class="col alert alert-info">
+    <h5>Qo'llanma</h5>
+    <p>Iltimos <a href="{% url 'download-csv' %}">CSV faylni yuklang</a>.1 qatorni o'zgartirish kerak emas!</p>
+  </div>
+
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% include 'corecode/form_snippet.html' %}
+
+    <input type="submit" class="btn btn-success" value="Yuklash">
+  </form>
+
+{% endblock content %}

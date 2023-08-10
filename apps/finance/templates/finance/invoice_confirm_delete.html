@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+{% endblock title %}
+
+
+{% block content %}
+
+<form action="" method="POST">
+  {% csrf_token %}
+
+  <div class="alert">
+    <p>Quyidagi to'lov chekini o'chirmoqchimisiz ? "{{ object }}"?</p>
+    <p>Ushbu hisob-fakturaga biriktirilgan barcha cheklar o'chiriladi</p>
+  </div>
+
+  <input type="submit" class="btn btn-primary" value="Confirm">
+
+</form>
+
+
+{% endblock content %}

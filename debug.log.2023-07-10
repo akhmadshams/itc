@@ -1,0 +1,423 @@
+INFO 2023-08-03 13:30:33,021 Watching for file changes with StatReloader
+INFO 2023-08-03 13:30:35,754 "GET / HTTP/1.1" 302 0
+INFO 2023-08-03 13:30:35,761 "GET /accounts/login/?next=/ HTTP/1.1" 200 4143
+INFO 2023-08-03 13:30:35,787 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2023-08-03 13:30:35,788 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9064
+INFO 2023-08-03 13:30:35,789 "GET /static/dist/img/logoit.png HTTP/1.1" 200 11827
+INFO 2023-08-03 13:30:35,789 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2023-08-03 13:30:35,789 "GET /static/dist/img/IT_park.png HTTP/1.1" 200 22952
+INFO 2023-08-03 13:30:35,789 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2023-08-03 13:30:39,021 "POST /accounts/login/ HTTP/1.1" 200 4268
+INFO 2023-08-03 13:30:48,441 "POST /accounts/login/ HTTP/1.1" 200 4268
+INFO 2023-08-03 13:31:40,599 Watching for file changes with StatReloader
+INFO 2023-08-03 13:31:43,606 "GET /accounts/login/ HTTP/1.1" 200 3993
+INFO 2023-08-03 13:31:51,159 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2023-08-03 13:31:51,171 "GET / HTTP/1.1" 200 16931
+INFO 2023-08-03 13:31:51,193 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2023-08-03 13:31:51,198 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2023-08-03 13:31:51,346 "GET /static/plugins/logo.png HTTP/1.1" 200 605
+INFO 2023-08-03 13:31:57,598 "GET / HTTP/1.1" 200 16931
+INFO 2023-08-03 13:31:58,548 "GET / HTTP/1.1" 200 16931
+INFO 2023-08-03 13:31:59,173 "GET /student/list HTTP/1.1" 200 10874
+INFO 2023-08-03 13:32:03,077 "GET /staff/list/ HTTP/1.1" 200 9798
+INFO 2023-08-03 13:32:05,421 "GET /finance/list/ HTTP/1.1" 200 10907
+INFO 2023-08-03 13:32:08,054 "GET /finance/24/detail/ HTTP/1.1" 200 11107
+INFO 2023-08-03 13:32:12,950 "GET /result/create/ HTTP/1.1" 200 10912
+INFO 2023-08-03 13:32:19,819 "GET / HTTP/1.1" 200 16931
+WARNING 2023-08-03 13:32:39,274 Not Found: /admin/
+WARNING 2023-08-03 13:32:39,274 "GET /admin/ HTTP/1.1" 404 6345
+WARNING 2023-08-03 13:32:39,776 Not Found: /admin/
+WARNING 2023-08-03 13:32:39,776 "GET /admin/ HTTP/1.1" 404 6345
+WARNING 2023-08-03 13:32:50,034 Not Found: /admin/
+WARNING 2023-08-03 13:32:50,034 "GET /admin/ HTTP/1.1" 404 6345
+INFO 2023-08-03 13:33:01,861 "GET / HTTP/1.1" 200 16931
+INFO 2023-08-03 13:33:03,308 "GET /site-config HTTP/1.1" 200 10979
+INFO 2023-08-03 13:33:08,717 "GET /result/view/all HTTP/1.1" 200 8948
+INFO 2023-08-03 13:33:10,777 "GET /student/list HTTP/1.1" 200 10874
+INFO 2023-08-03 13:34:33,246 /Users/akhmed/Downloads/crm/school_app/urls.py changed, reloading.
+INFO 2023-08-03 13:34:33,552 Watching for file changes with StatReloader
+INFO 2023-08-03 13:34:57,058 /Users/akhmed/Downloads/crm/school_app/urls.py changed, reloading.
+INFO 2023-08-03 13:34:57,320 Watching for file changes with StatReloader
+INFO 2023-08-03 13:35:01,476 Watching for file changes with StatReloader
+INFO 2023-08-03 13:35:47,450 /Users/akhmed/Downloads/crm/school_app/settings.py changed, reloading.
+INFO 2023-08-03 13:35:49,170 Watching for file changes with StatReloader
+ERROR 2023-08-03 13:35:58,039 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_admin_log
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_admin_log
+ERROR 2023-08-03 13:35:58,041 "GET /admin/ HTTP/1.1" 500 342763
+WARNING 2023-08-03 13:35:58,565 Not Found: /admin]
+WARNING 2023-08-03 13:35:58,566 "GET /admin] HTTP/1.1" 404 6453
+ERROR 2023-08-03 13:36:01,833 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_admin_log
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/template/defaulttags.py", line 194, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akhmed/Downloads/crm/venv/lib/python3.11/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_admin_log
+ERROR 2023-08-03 13:36:01,835 "GET /admin/ HTTP/1.1" 500 342489
+INFO 2023-08-03 13:36:21,980 Watching for file changes with StatReloader
+INFO 2023-08-03 13:36:24,260 "GET /admin/ HTTP/1.1" 200 5560
+INFO 2023-08-03 13:36:24,280 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+INFO 2023-08-03 13:36:24,284 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+INFO 2023-08-03 13:36:24,285 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2023-08-03 13:36:24,285 "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+INFO 2023-08-03 13:36:24,286 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2023-08-03 13:36:24,287 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18533
+INFO 2023-08-03 13:36:24,287 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2023-08-03 13:36:24,293 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2023-08-03 13:36:24,294 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2023-08-03 13:36:26,187 "GET /admin/auth/user/ HTTP/1.1" 200 12048
+INFO 2023-08-03 13:36:26,203 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2023-08-03 13:36:26,204 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+INFO 2023-08-03 13:36:26,204 "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+INFO 2023-08-03 13:36:26,210 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2023-08-03 13:36:26,211 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+INFO 2023-08-03 13:36:26,211 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2023-08-03 13:36:26,216 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2023-08-03 13:36:26,217 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2023-08-03 13:36:26,217 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2023-08-03 13:36:26,219 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-03 13:36:26,219 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2023-08-03 13:36:26,220 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+INFO 2023-08-03 13:36:26,222 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2023-08-03 13:36:26,235 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-08-03 13:36:26,236 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2023-08-03 13:36:47,181 "POST /admin/auth/user/ HTTP/1.1" 200 7395
+INFO 2023-08-03 13:36:47,195 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2023-08-03 13:36:48,327 "POST /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2023-08-03 13:36:48,342 "GET /admin/auth/user/ HTTP/1.1" 200 10582
+INFO 2023-08-03 13:36:48,359 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-03 13:36:51,560 "GET /admin/auth/group/ HTTP/1.1" 200 7255
+INFO 2023-08-03 13:36:51,578 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-08-05 06:28:25,636 Watching for file changes with StatReloader
+INFO 2023-08-05 06:28:28,149 "GET / HTTP/1.1" 302 0
+INFO 2023-08-05 06:28:28,156 "GET /accounts/login/?next=/ HTTP/1.1" 200 4143
+INFO 2023-08-05 06:28:28,188 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2023-08-05 06:28:28,189 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9064
+INFO 2023-08-05 06:28:28,192 "GET /static/dist/img/IT_park.png HTTP/1.1" 200 22952
+INFO 2023-08-05 06:28:28,193 "GET /static/dist/img/logoit.png HTTP/1.1" 200 11827
+INFO 2023-08-05 06:28:28,194 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2023-08-05 06:28:28,194 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2023-08-05 06:28:28,199 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2023-08-05 06:28:28,200 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2023-08-05 06:28:28,202 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2023-08-05 06:28:28,203 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2023-08-05 06:28:28,204 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2023-08-05 06:28:28,205 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2023-08-05 06:28:28,206 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2023-08-05 06:28:28,209 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2023-08-05 06:28:29,230 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+INFO 2023-08-05 06:28:29,244 "GET /favicon.ico HTTP/1.1" 302 0
+INFO 2023-08-05 06:28:29,245 "GET /static/plugins/logo.png HTTP/1.1" 200 605
+INFO 2023-08-05 06:28:37,649 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2023-08-05 06:28:37,663 "GET / HTTP/1.1" 200 16931
+INFO 2023-08-05 06:28:37,681 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2023-08-05 06:28:37,691 "GET /static/plugins/moment/moment.min.js HTTP/1.1" 200 53324
+INFO 2023-08-05 06:28:37,695 "GET /static/plugins/daterangepicker/daterangepicker.js HTTP/1.1" 200 67268
+WARNING 2023-08-05 06:28:37,703 "GET /static/plugins/sparklines/sparkline.js HTTP/1.1" 404 1852
+WARNING 2023-08-05 06:28:37,703 "GET /static/plugins/jqvmap/jquery.vmap.min.js HTTP/1.1" 404 1858
+WARNING 2023-08-05 06:28:37,704 "GET /static/plugins/jquery-knob/jquery.knob.min.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:28:37,705 "GET /static/plugins/chart.js/Chart.min.js HTTP/1.1" 404 1846
+WARNING 2023-08-05 06:28:37,706 "GET /static/plugins/jqvmap/maps/jquery.vmap.usa.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:28:37,706 "GET /static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 404 1966
+INFO 2023-08-05 06:28:37,707 "GET /static/dist/js/pages/dashboard.js HTTP/1.1" 200 7841
+WARNING 2023-08-05 06:28:37,708 "GET /static/plugins/summernote/summernote-bs4.min.js HTTP/1.1" 404 1879
+INFO 2023-08-05 06:28:37,712 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2023-08-05 06:28:37,764 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2023-08-05 06:28:52,733 "GET /student/list HTTP/1.1" 200 10874
+INFO 2023-08-05 06:28:55,344 "GET /student/create/ HTTP/1.1" 200 13726
+INFO 2023-08-05 06:29:04,423 "GET / HTTP/1.1" 200 16931
+WARNING 2023-08-05 06:29:04,451 "GET /static/plugins/chart.js/Chart.min.js HTTP/1.1" 404 1846
+WARNING 2023-08-05 06:29:04,452 "GET /static/plugins/jquery-knob/jquery.knob.min.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:29:04,452 "GET /static/plugins/jqvmap/maps/jquery.vmap.usa.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:29:04,454 "GET /static/plugins/jqvmap/jquery.vmap.min.js HTTP/1.1" 404 1858
+WARNING 2023-08-05 06:29:04,454 "GET /static/plugins/sparklines/sparkline.js HTTP/1.1" 404 1852
+WARNING 2023-08-05 06:29:04,454 "GET /static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 404 1966
+WARNING 2023-08-05 06:29:04,456 "GET /static/plugins/summernote/summernote-bs4.min.js HTTP/1.1" 404 1879
+INFO 2023-08-05 06:29:07,997 "GET / HTTP/1.1" 200 16931
+WARNING 2023-08-05 06:29:08,022 "GET /static/plugins/chart.js/Chart.min.js HTTP/1.1" 404 1846
+WARNING 2023-08-05 06:29:08,023 "GET /static/plugins/jqvmap/jquery.vmap.min.js HTTP/1.1" 404 1858
+WARNING 2023-08-05 06:29:08,024 "GET /static/plugins/sparklines/sparkline.js HTTP/1.1" 404 1852
+WARNING 2023-08-05 06:29:08,026 "GET /static/plugins/jquery-knob/jquery.knob.min.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:29:08,027 "GET /static/plugins/jqvmap/maps/jquery.vmap.usa.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:29:08,029 "GET /static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 404 1966
+WARNING 2023-08-05 06:29:08,030 "GET /static/plugins/summernote/summernote-bs4.min.js HTTP/1.1" 404 1879
+INFO 2023-08-05 06:29:15,501 "GET /finance/list/ HTTP/1.1" 200 10907
+INFO 2023-08-05 06:29:17,339 "GET /finance/24/detail/ HTTP/1.1" 200 11107
+INFO 2023-08-05 06:29:17,340 - Broken pipe from ('127.0.0.1', 58852)
+INFO 2023-08-05 06:29:17,341 "GET /finance/receipt/create?invoice=24 HTTP/1.1" 200 10982
+INFO 2023-08-05 06:32:24,485 "GET / HTTP/1.1" 200 16931
+WARNING 2023-08-05 06:32:24,547 "GET /static/plugins/jqvmap/maps/jquery.vmap.usa.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:32:24,549 "GET /static/plugins/jquery-knob/jquery.knob.min.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:32:24,550 "GET /static/plugins/chart.js/Chart.min.js HTTP/1.1" 404 1846
+WARNING 2023-08-05 06:32:24,550 "GET /static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 404 1966
+WARNING 2023-08-05 06:32:24,551 "GET /static/plugins/sparklines/sparkline.js HTTP/1.1" 404 1852
+WARNING 2023-08-05 06:32:24,552 "GET /static/plugins/jqvmap/jquery.vmap.min.js HTTP/1.1" 404 1858
+WARNING 2023-08-05 06:32:24,553 "GET /static/plugins/summernote/summernote-bs4.min.js HTTP/1.1" 404 1879
+INFO 2023-08-05 06:32:32,146 "GET /site-config HTTP/1.1" 200 10979
+INFO 2023-08-05 06:32:40,461 "GET / HTTP/1.1" 200 16931
+WARNING 2023-08-05 06:32:40,490 "GET /static/plugins/sparklines/sparkline.js HTTP/1.1" 404 1852
+WARNING 2023-08-05 06:32:40,490 "GET /static/plugins/jqvmap/jquery.vmap.min.js HTTP/1.1" 404 1858
+WARNING 2023-08-05 06:32:40,491 "GET /static/plugins/chart.js/Chart.min.js HTTP/1.1" 404 1846
+WARNING 2023-08-05 06:32:40,492 "GET /static/plugins/jquery-knob/jquery.knob.min.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:32:40,494 "GET /static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 404 1966
+WARNING 2023-08-05 06:32:40,496 "GET /static/plugins/jqvmap/maps/jquery.vmap.usa.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:32:40,497 "GET /static/plugins/summernote/summernote-bs4.min.js HTTP/1.1" 404 1879
+INFO 2023-08-05 06:32:41,423 "GET / HTTP/1.1" 200 16931
+WARNING 2023-08-05 06:32:41,452 "GET /static/plugins/chart.js/Chart.min.js HTTP/1.1" 404 1846
+WARNING 2023-08-05 06:32:41,457 "GET /static/plugins/jqvmap/maps/jquery.vmap.usa.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:32:41,457 "GET /static/plugins/sparklines/sparkline.js HTTP/1.1" 404 1852
+WARNING 2023-08-05 06:32:41,458 "GET /static/plugins/jqvmap/jquery.vmap.min.js HTTP/1.1" 404 1858
+WARNING 2023-08-05 06:32:41,458 "GET /static/plugins/jquery-knob/jquery.knob.min.js HTTP/1.1" 404 1873
+WARNING 2023-08-05 06:32:41,459 "GET /static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 404 1966
+WARNING 2023-08-05 06:32:41,460 "GET /static/plugins/summernote/summernote-bs4.min.js HTTP/1.1" 404 1879
