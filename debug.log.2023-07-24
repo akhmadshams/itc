@@ -1,0 +1,17 @@
+INFO 2023-08-14 22:25:04,932 Watching for file changes with StatReloader
+INFO 2023-08-14 22:25:21,575 Watching for file changes with StatReloader
+INFO 2023-08-14 22:25:24,138 "GET / HTTP/1.1" 302 0
+INFO 2023-08-14 22:25:24,145 "GET /accounts/login/?next=/ HTTP/1.1" 200 4143
+INFO 2023-08-14 22:25:24,174 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2023-08-14 22:25:24,174 "GET /static/dist/img/logoit.png HTTP/1.1" 200 11827
+INFO 2023-08-14 22:25:24,175 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9064
+INFO 2023-08-14 22:25:24,175 "GET /static/dist/img/IT_park.png HTTP/1.1" 200 22952
+INFO 2023-08-14 22:25:24,176 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2023-08-14 22:25:24,177 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2023-08-14 22:25:24,776 "GET /favicon.ico HTTP/1.1" 302 0
+INFO 2023-08-14 22:25:24,777 "GET /static/plugins/logo.png HTTP/1.1" 200 605
+INFO 2023-08-14 22:25:36,223 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2023-08-14 22:25:36,236 "GET / HTTP/1.1" 200 16931
+INFO 2023-08-14 22:25:36,249 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2023-08-14 22:25:36,261 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2023-08-15 00:53:37,272 Watching for file changes with StatReloader

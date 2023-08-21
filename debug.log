@@ -1,16 +1,17 @@
-INFO 2023-08-14 22:25:04,932 Watching for file changes with StatReloader
-INFO 2023-08-14 22:25:21,575 Watching for file changes with StatReloader
-INFO 2023-08-14 22:25:24,138 "GET / HTTP/1.1" 302 0
-INFO 2023-08-14 22:25:24,145 "GET /accounts/login/?next=/ HTTP/1.1" 200 4143
-INFO 2023-08-14 22:25:24,174 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
-INFO 2023-08-14 22:25:24,174 "GET /static/dist/img/logoit.png HTTP/1.1" 200 11827
-INFO 2023-08-14 22:25:24,175 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9064
-INFO 2023-08-14 22:25:24,175 "GET /static/dist/img/IT_park.png HTTP/1.1" 200 22952
-INFO 2023-08-14 22:25:24,176 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
-INFO 2023-08-14 22:25:24,177 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
-INFO 2023-08-14 22:25:24,776 "GET /favicon.ico HTTP/1.1" 302 0
-INFO 2023-08-14 22:25:24,777 "GET /static/plugins/logo.png HTTP/1.1" 200 605
-INFO 2023-08-14 22:25:36,223 "POST /accounts/login/ HTTP/1.1" 302 0
-INFO 2023-08-14 22:25:36,236 "GET / HTTP/1.1" 200 16931
-INFO 2023-08-14 22:25:36,249 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
-INFO 2023-08-14 22:25:36,261 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2023-08-21 20:54:58,651 Watching for file changes with StatReloader
+INFO 2023-08-21 20:55:02,144 "GET / HTTP/1.1" 302 0
+INFO 2023-08-21 20:55:02,161 "GET /accounts/login/?next=/ HTTP/1.1" 200 4143
+INFO 2023-08-21 20:55:02,185 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9064
+INFO 2023-08-21 20:55:02,185 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2023-08-21 20:55:02,188 "GET /static/dist/img/logoit.png HTTP/1.1" 200 11827
+INFO 2023-08-21 20:55:02,188 "GET /static/dist/img/IT_park.png HTTP/1.1" 200 22952
+INFO 2023-08-21 20:55:02,190 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2023-08-21 20:55:02,192 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2023-08-21 20:55:02,194 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2023-08-21 20:55:17,983 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2023-08-21 20:55:18,003 "GET / HTTP/1.1" 200 16931
+INFO 2023-08-21 20:55:18,027 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+WARNING 2023-08-21 20:55:18,039 "GET /static/plugins/chart.js/Chart.min.js HTTP/1.1" 404 1846
+WARNING 2023-08-21 20:55:18,040 "GET /static/plugins/summernote/summernote-bs4.min.js HTTP/1.1" 404 1879
+INFO 2023-08-21 20:55:18,044 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2023-08-21 20:55:18,255 "GET /static/plugins/logo.png HTTP/1.1" 200 605
